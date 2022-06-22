@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	println(removeDuplicates([]int{1, 1, 2, 2, 3, 3, 4, 4, 5}))
 	println(removeDuplicates([]int{1, 1, 2}))
@@ -20,6 +18,5 @@ func removeDuplicates(nums []int) int {
 			nums[k] = nums[i]
 		}
 	}
-	fmt.Println(nums)
 	return k + 1
 }
